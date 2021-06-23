@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_2_skullDices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TableBackground  " translatesAutoresizingMaskIntoConstraints="NO" id="ORb-cs-Uf4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="ijh-id-8BQ">
+                                <rect key="frame" x="39.333333333333343" y="368" width="335.66666666666663" height="160"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice1" translatesAutoresizingMaskIntoConstraints="NO" id="4mr-RN-390">
+                                        <rect key="frame" x="0.0" y="0.0" width="156.33333333333334" height="160"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice1" translatesAutoresizingMaskIntoConstraints="NO" id="nxM-1i-hRw">
+                                        <rect key="frame" x="179.33333333333331" y="0.0" width="156.33333333333331" height="160"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SkullAndCrossbones  " translatesAutoresizingMaskIntoConstraints="NO" id="Y4x-pg-gda">
+                                <rect key="frame" x="123.66666666666667" y="92.666666666666671" width="166.66666666666663" height="133.66666666666663"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skull dices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LZ-Cl-W6V">
+                                <rect key="frame" x="97.666666666666671" y="241.33333333333334" width="218.66666666666663" height="111.66666666666666"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAP-oQ-7Aw">
+                                <rect key="frame" x="67" y="578" width="280" height="141"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="38"/>
+                                <state key="normal" title="Press to roll">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3N-2K-6fw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7LZ-Cl-W6V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0fz-WP-Z0g"/>
+                            <constraint firstItem="7LZ-Cl-W6V" firstAttribute="top" secondItem="Y4x-pg-gda" secondAttribute="bottom" constant="15" id="7wP-LC-cZ5"/>
+                            <constraint firstItem="ijh-id-8BQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cua-U1-t3q"/>
+                            <constraint firstItem="VAP-oQ-7Aw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hof-Cg-Zjg"/>
+                            <constraint firstItem="Y4x-pg-gda" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UUl-W2-jpO"/>
+                            <constraint firstItem="ijh-id-8BQ" firstAttribute="top" secondItem="7LZ-Cl-W6V" secondAttribute="bottom" constant="15" id="anE-wu-Naf"/>
+                            <constraint firstItem="VAP-oQ-7Aw" firstAttribute="top" secondItem="ijh-id-8BQ" secondAttribute="bottom" constant="50" id="b4G-Yz-H8b"/>
+                            <constraint firstItem="ijh-id-8BQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tSY-8I-5lz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewDiceLeft" destination="4mr-RN-390" id="XJe-Lb-eMU"/>
+                        <outlet property="imageViewDiceRight" destination="nxM-1i-hRw" id="fAU-V1-nAx"/>
+                        <outlet property="press" destination="VAP-oQ-7Aw" id="dFs-Va-JFB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dice1" width="156.33332824707031" height="160"/>
+        <image name="SkullAndCrossbones  " width="166.66667175292969" height="133.66667175292969"/>
+        <image name="TableBackground  " width="240" height="240"/>
+    </resources>
+</document>
