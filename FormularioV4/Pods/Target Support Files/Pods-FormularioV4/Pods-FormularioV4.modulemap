@@ -1,0 +1,6 @@
+framework module Pods_FormularioV4 {
+  umbrella header "Pods-FormularioV4-umbrella.h"
+
+  export *
+  module * { export * }
+}
